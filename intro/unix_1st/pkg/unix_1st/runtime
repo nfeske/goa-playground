@@ -1,0 +1,65 @@
+<runtime ram="100M" caps="5000" binary="init">
+
+	<content>
+		<rom label="bash.tar"/>
+		<rom label="vfs"/>
+		<rom label="vfs.lib.so"/>
+		<rom label="fs_rom"/>
+		<rom label="libc.lib.so"/>
+		<rom label="libm.lib.so"/>
+		<rom label="posix.lib.so"/>
+	</content>
+
+	<config verbose="yes">
+
+		<parent-provides>
+			<service name="ROM"/>
+			<service name="LOG"/>
+			<service name="RM"/>
+			<service name="CPU"/>
+			<service name="PD"/>
+			<service name="Timer"/>
+		</parent-provides>
+
+		<start name="vfs" caps="100">
+			<resource name="RAM" quantum="10M"/>
+			<provides> <service name="File_system"/> </provides>
+			<config>
+				<vfs> <tar name="bash.tar"/> </vfs>
+				<default-policy root="/" />
+			</config>
+			<route> <any-service> <parent/> </any-service> </route>
+		</start>
+
+		<start name="vfs_rom" caps="100">
+			<resource name="RAM" quantum="10M"/>
+			<binary name="fs_rom"/>
+			<provides> <service name="ROM"/> </provides>
+			<config/>
+			<route>
+				<service name="File_system"> <child name="vfs"/> </service>
+				<any-service> <parent/> </any-service>
+			</route>
+		</start>
+
+		<start name="/bin/bash" caps="1000">
+			<resource name="RAM" quantum="10M" />
+			<config>
+				<libc stdin="/dev/null" stdout="/dev/log" stderr="/dev/log"
+				      rtc="/dev/null"/>
+				<vfs>
+					<dir name="dev"> <null/> <log/> </dir>
+				</vfs>
+				<arg value="bash"/>
+				<arg value="-c"/>
+				<arg value="echo files at /dev: /dev/*"/>
+			</config>
+			<route>
+				<service name="ROM" label_last="/bin/bash"> <child name="vfs_rom"/> </service>
+				<any-service> <parent/> </any-service>
+			</route>
+		</start>
+	
+	</config>
+
+</runtime>

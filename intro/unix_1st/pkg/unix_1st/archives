@@ -1,0 +1,5 @@
+nfeske/src/bash
+nfeske/src/vfs
+nfeske/src/fs_rom
+nfeske/src/libc
+nfeske/src/posix
