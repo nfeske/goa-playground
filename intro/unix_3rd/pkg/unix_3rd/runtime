@@ -1,0 +1,29 @@
+<runtime ram="100M" caps="5000" binary="init" config="unix.config">
+
+	<requires>
+		<nitpicker/>
+		<timer/>
+	</requires>
+
+	<content>
+		<rom label="bash.tar"/>
+		<rom label="vfs"/>
+		<rom label="vfs.lib.so"/>
+		<rom label="fs_rom"/>
+		<rom label="libc.lib.so"/>
+		<rom label="libm.lib.so"/>
+		<rom label="posix.lib.so"/>
+		<rom label="unix.config"/>
+		<rom label="nit_fb"/>
+		<rom label="terminal"/>
+		<rom label="terminal.config"/>
+		<rom label="VeraMono.ttf"/>
+		<rom label="vfs_ttf.lib.so"/>
+		<rom label="coreutils.tar"/>
+		<rom label="vfs_pipe.lib.so"/>
+		<rom label="vim.tar"/>
+		<rom label="ncurses.lib.so"/>
+		<rom label="vimrc"/>
+	</content>
+
+</runtime>
