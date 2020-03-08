@@ -1,0 +1,10 @@
+LICENSE   := GPLv2
+VERSION   := 2.2.1
+DOWNLOADS := hatari.archive
+
+URL(hatari) := https://download.tuxfamily.org/hatari/2.2.1/hatari-2.2.1.tar.bz2
+SHA(hatari) := 11afef30a274be84696588583d5a1d65c8046934670f718c311c956ef7106f60
+DIR(hatari) := src
+
+DIRS := raw
+DIR_CONTENT(raw) := src/src/tos.img
