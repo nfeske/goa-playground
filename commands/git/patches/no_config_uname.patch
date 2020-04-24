@@ -1,0 +1,10 @@
++++ src/Makefile	2020-04-30 15:39:52.515733722 +0200
+@@ -1196,7 +1196,7 @@
+ SPATCH_FLAGS = --all-includes --patch .
+ SPATCH_BATCH_SIZE = 1
+ 
+-include config.mak.uname
++#include config.mak.uname
+ -include config.mak.autogen
+ -include config.mak
+ 

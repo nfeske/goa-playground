@@ -1,0 +1,29 @@
++++ src/config.c	2020-04-30 16:05:30.215616230 +0200
+@@ -2854,11 +2854,13 @@
+ 		close(in_fd);
+ 		in_fd = -1;
+ 
++#if 0 /* chmod is not supported on Genode */
+ 		if (chmod(get_lock_file_path(&lock), st.st_mode & 07777) < 0) {
+ 			error_errno(_("chmod on %s failed"), get_lock_file_path(&lock));
+ 			ret = CONFIG_NO_WRITE;
+ 			goto out_free;
+ 		}
++#endif
+ 
+ 		if (store.seen_nr == 0) {
+ 			if (!store.seen_alloc) {
+@@ -3092,11 +3094,13 @@
+ 		goto out;
+ 	}
+ 
++#if 0 /* chmod is not supported on Genode */
+ 	if (chmod(get_lock_file_path(&lock), st.st_mode & 07777) < 0) {
+ 		ret = error_errno(_("chmod on %s failed"),
+ 				  get_lock_file_path(&lock));
+ 		goto out;
+ 	}
++#endif
+ 
+ 	while (fgets(buf, sizeof(buf), config_file)) {
+ 		int i;

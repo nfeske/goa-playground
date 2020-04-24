@@ -1,0 +1,6 @@
+nfeske/api/libc
+nfeske/api/libssl
+nfeske/api/zlib
+nfeske/api/curl
+nfeske/api/libcrypto
+nfeske/api/posix

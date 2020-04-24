@@ -1,0 +1,10 @@
+nfeske/pkg/unix
+nfeske/src/git
+nfeske/src/libssl
+nfeske/src/libssh
+nfeske/src/libcrypto
+nfeske/src/zlib
+nfeske/src/curl
+nfeske/src/sed
+nfeske/src/pcre
+nfeske/src/libc
