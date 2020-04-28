@@ -12,6 +12,7 @@
 		<rom label="unix.config"/>
 		<rom label="terminal.config"/>
 		<rom label="vfs.config"/>
+		<rom label="bash.config"/>
 		<rom label="vimrc"/>
 
 		<!-- components -->
