@@ -1,0 +1,10 @@
++++ src/configure	2020-04-29 16:09:18.726535979 +0200
+@@ -4101,7 +4101,7 @@
+ # -- Try ncurses.
+ if test "x$TERMLIBS" = x; then
+   if test $have_ncurses = yes; then
+-    TERMLIBS="-lncurses"
++    TERMLIBS="-l:ncurses.lib.so"
+     SAVE_LIBS=$LIBS
+     LIBS="$LIBS $TERMLIBS"
+     cat confdefs.h - <<_ACEOF >conftest.$ac_ext
