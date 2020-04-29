@@ -1,0 +1,9 @@
+LICENSE   := GPLv3
+VERSION   := 530
+DOWNLOADS := less.archive
+
+URL(less) := https://ftp.gnu.org/gnu/less/less-$(VERSION).tar.gz
+SHA(less) := 503f91ab0af4846f34f0444ab71c4b286123f0044a4964f1ae781486c617f2e2
+DIR(less) := src
+
+PATCHES := patches/configure.patch
