@@ -1,7 +1,7 @@
 <runtime ram="100M" caps="5000" binary="init" config="unix.config">
 
 	<requires>
-		<nitpicker/>
+		<gui/>
 		<timer/>
 	</requires>
 
@@ -14,7 +14,7 @@
 		<rom label="libm.lib.so"/>
 		<rom label="posix.lib.so"/>
 		<rom label="unix.config"/>
-		<rom label="nit_fb"/>
+		<rom label="gui_fb"/>
 		<rom label="terminal"/>
 		<rom label="terminal.config"/>
 		<rom label="VeraMono.ttf"/>

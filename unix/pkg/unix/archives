@@ -1,6 +1,6 @@
 nfeske/pkg/terminal
 nfeske/src/init
-nfeske/src/nit_fb
+nfeske/src/gui_fb
 nfeske/src/posix
 nfeske/src/ncurses
 nfeske/src/vim

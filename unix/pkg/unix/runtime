@@ -1,7 +1,7 @@
-<runtime ram="100M" caps="5000" binary="init" config="unix.config">
+<runtime ram="130M" caps="5000" binary="init" config="unix.config">
 
 	<requires>
-		<nitpicker/>
+		<gui/>
 		<timer/>
 		<rom label="vimrc"/>
 	</requires>
@@ -17,11 +17,10 @@
 
 		<!-- components -->
 		<rom label="init"/>
-		<rom label="nit_fb"/>
 		<rom label="terminal"/>
 		<rom label="vfs"/>
 		<rom label="fs_rom"/>
-		<rom label="nit_fb"/>
+		<rom label="gui_fb"/>
 
 		<!-- libraries -->
 		<rom label="vfs.lib.so"/>
