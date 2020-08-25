@@ -1,6 +1,6 @@
 <runtime ram="32M" caps="200" binary="hatari">
 
-	<requires> <nitpicker/> <rtc/> <timer/> </requires>
+	<requires> <gui/> <rtc/> <timer/> </requires>
 
 	<config>
 		<vfs>
