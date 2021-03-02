@@ -3,7 +3,6 @@ nfeske/src/vfs
 nfeske/src/fs_rom
 nfeske/src/libc
 nfeske/src/posix
-nfeske/src/gui_fb
 nfeske/src/terminal
 nfeske/raw/ttf-bitstream-vera-minimal
 nfeske/src/vfs_ttf
