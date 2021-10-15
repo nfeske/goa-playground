@@ -1,0 +1,15 @@
++++ src/progress.c	2020-04-24 16:28:41.401097370 +0200
+@@ -75,7 +75,12 @@
+ static int is_foreground_fd(int fd)
+ {
+ 	int tpgrp = tcgetpgrp(fd);
+-	return tpgrp < 0 || tpgrp == getpgid(0);
++	/*
++	 * 'getpgid' is not provided by Genode's libc
++	 *
++	 * return tpgrp < 0 || tpgrp == getpgid(0);
++	 */
++	return tpgrp < 0;
+ }
+ 
+ static int display(struct progress *progress, unsigned n, const char *done)

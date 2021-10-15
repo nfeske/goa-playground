@@ -1,0 +1,13 @@
+LICENSE   := GPLv2
+VERSION   := 2.26.2
+DOWNLOADS := git.archive
+
+URL(git) := https://mirrors.edge.kernel.org/pub/software/scm/git/git-$(VERSION).tar.gz
+SHA(git) := e1c17777528f55696815ef33587b1d20f5eec246669f3b839d15dbfffad9c121
+DIR(git) := src
+
+PATCHES := patches/getpgid.patch \
+           patches/no_config_uname.patch \
+           patches/chmod.patch \
+           patches/http.patch
+

@@ -1,0 +1,10 @@
+nfeske/pkg/unix
+nfeske/src/git
+genodelabs/src/openssl
+genodelabs/src/libssh
+genodelabs/src/zlib
+genodelabs/src/curl
+nfeske/src/vfs_lwip
+nfeske/src/sed
+nfeske/src/pcre
+nfeske/src/libc

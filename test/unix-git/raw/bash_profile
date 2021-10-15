@@ -1,0 +1,37 @@
+git config --global user.email "a@b.cd"
+git config --global user.name "Test User"
+
+cd $HOME
+
+git clone https://github.com/nfeske/gosh
+
+#echo --- create new repository
+#git init
+#
+#echo --- perform two commits
+#echo first > test.txt
+#git add test.txt
+#git commit test.txt -m "first commit"
+#echo second > test.txt
+#git commit test.txt -m "second commit"
+#git log
+#
+#echo --- create and modify topic branch
+#git checkout -b topic HEAD
+#git reset --hard HEAD^
+#git log
+#echo complementary > another.txt
+#git add another.txt
+#git commit another.txt -m "another text"
+#git log
+#
+#echo --- rebase no-op
+#git rebase HEAD
+#git log
+#
+#echo --- rebase to master - does not work yet
+#git rebase master
+#git log
+#
+#echo --- git clone via https
+#git clone https://github.com/nfeske/gosh gosh
