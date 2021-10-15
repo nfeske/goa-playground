@@ -20,7 +20,6 @@
 		<rom label="terminal"/>
 		<rom label="vfs"/>
 		<rom label="fs_rom"/>
-		<rom label="gui_fb"/>
 
 		<!-- libraries -->
 		<rom label="vfs.lib.so"/>
