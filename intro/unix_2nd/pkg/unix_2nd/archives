@@ -1,8 +1,8 @@
-nfeske/src/bash
-nfeske/src/vfs
-nfeske/src/fs_rom
-nfeske/src/libc
-nfeske/src/posix
-nfeske/src/terminal
-nfeske/raw/ttf-bitstream-vera-minimal
-nfeske/src/vfs_ttf
+genodelabs/src/bash
+genodelabs/src/vfs
+genodelabs/src/fs_rom
+genodelabs/src/libc
+genodelabs/src/posix
+genodelabs/src/terminal
+genodelabs/raw/ttf-bitstream-vera-minimal
+genodelabs/src/vfs_ttf
