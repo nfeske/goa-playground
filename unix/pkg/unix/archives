@@ -10,3 +10,4 @@ genodelabs/src/coreutils
 genodelabs/src/vfs_pipe
 genodelabs/src/vim
 genodelabs/src/ncurses
+genodelabs/src/init
