@@ -1,5 +1,9 @@
 <runtime ram="100M" caps="5000" binary="init">
 
+	<requires>
+		<timer/>
+	</requires>
+
 	<content>
 		<rom label="bash.tar"/>
 		<rom label="vfs"/>
