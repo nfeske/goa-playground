@@ -1,0 +1,10 @@
++++ src/src/screen.c	2023-06-17 21:33:37.037062543 +0200
+@@ -434,6 +434,8 @@
+ 		if (bUseSdlRenderer)
+ 		{
+ 			Resolution_GetDesktopSize(&deskw, &deskh);
++			deskw = 1280;
++			deskh = 1024;
+ 			if (win_width > deskw)
+ 				win_width = deskw;
+ 			if (win_height > deskh)

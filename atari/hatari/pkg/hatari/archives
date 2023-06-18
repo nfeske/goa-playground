@@ -1,3 +1,10 @@
 genodelabs/src/libc
 genodelabs/src/vfs
-genodelabs/src/sdl
+genodelabs/src/stdcxx
+genodelabs/src/zlib
+nfeske/src/sdl2
+nfeske/src/mesa
+nfeske/src/libdrm
+nfeske/src/expat
+nfeske/src/vfs_gpu
+nfeske/raw/emutos/1.2.1

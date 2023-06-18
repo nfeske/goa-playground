@@ -1,0 +1,18 @@
+LICENSE   := GPLv2
+VERSION   := 1.2.1
+DOWNLOADS := emutos256k.archive emutos512k.archive
+
+URL_BASE := https://downloads.sourceforge.net/project/emutos/emutos
+
+URL(emutos256k) := $(URL_BASE)/$(VERSION)/emutos-256k-$(VERSION).zip
+SHA(emutos256k) := 86c56fc66e1b638226b1108ac65fbab29f59c130379db1c8a1e9192959dc52b5
+DIR(emutos256k) := extracted
+
+URL(emutos512k) := $(URL_BASE)/$(VERSION)/emutos-512k-$(VERSION).zip
+SHA(emutos512k) := de1b56285a677d2124d2e41ca6634d330f62b3132bb6867236f11908eb51518b
+DIR(emutos512k) := extracted
+
+DIRS := raw
+DIR_CONTENT(raw) := extracted/emutos-256k-$(VERSION)/etos256us.img \
+                    extracted/emutos-512k-$(VERSION)/etos512us.img \
+                    extracted/emutos-256k-$(VERSION)/emuicon.rsc

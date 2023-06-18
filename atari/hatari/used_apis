@@ -1,3 +1,2 @@
 genodelabs/api/libc
-genodelabs/api/base
-genodelabs/api/sdl
+nfeske/api/sdl2

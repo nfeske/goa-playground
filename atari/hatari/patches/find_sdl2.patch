@@ -1,0 +1,11 @@
++++ src/CMakeLists.txt	2023-06-17 18:33:46.500332435 +0200
+@@ -101,7 +101,8 @@
+ # Check for libraries:
+ # ####################
+ 
+-find_package(SDL2)
++#find_package(SDL2)
++set(SDL2_FOUND True)
+ if(NOT SDL2_FOUND)
+ 	message(FATAL_ERROR "SDL2 library not found!")
+ endif(NOT SDL2_FOUND)

@@ -1,32 +1,40 @@
-<runtime ram="32M" caps="200" binary="hatari">
+<runtime ram="128M" caps="500" binary="hatari">
 
-	<requires> <gui/> <rtc/> <timer/> </requires>
+	<requires>
+		<gui/> <rtc/> <timer/> <gpu/>
+		<file_system label="drive_c" writeable="yes"/>
+		<rom label="mesa_gpu_drv.lib.so"/>
+	</requires>
 
-	<config>
+	<config ld_verbose="yes">
 		<vfs>
-			<dir name="dev"> <log/>
+			<dir name="dev"> <log/> <gpu/>
 				<inline name="rtc">2018-01-01 00:01</inline>
 			</dir>
-			<dir name="share"> <dir name="hatari"> <rom name="tos.img"/> </dir> </dir>
+			<dir name="share"> <dir name="hatari">
+				<rom name="tos.img" label="etos512us.img"/> </dir> </dir>
 			<dir name="c">
-				<ram/>
+				<fs label="drive_c"/>
 			</dir>
 		</vfs>
-		<libc stdout="/dev/log" rtc="/dev/rtc"/>
+		<libc stdout="/dev/log" stderr="/dev/log" rtc="/dev/rtc"/>
 
 		<arg value="hatari"/>
 		<arg value="--tos"/>          <arg value="/share/hatari/tos.img"/>
 		<arg value="--machine"/>      <arg value="falcon"/>
 		<arg value="--monitor"/>      <arg value="vga"/>
-		<arg value="-d"/>             <arg value="/c"/>
 		<arg value="-s"/>             <arg value="14"/>
+		<arg value="-d"/>             <arg value="/c"/>
 		<arg value="--timer-d"/>      <arg value="1"/>
 		<arg value="--resizable"/>    <arg value="1"/>
-		<arg value="--frameskips"/>   <arg value="0"/>
+		<arg value="--frameskips"/>   <arg value="1"/>
 		<arg value="--confirm-quit"/> <arg value="0"/>
 		<arg value="--dsp"/>          <arg value="emu"/>
 		<arg value="--statusbar"/>    <arg value="1"/>
 		<arg value="--borders"/>      <arg value="0"/>
+		<arg value="--cpu-exact"/>    <arg value="0"/>
+		<arg value="--fast-boot"/>    <arg value="1"/>
+		<arg value="--compatible"/>   <arg value="0"/>
 	</config>
 
 	<content>
@@ -34,9 +42,18 @@
 		<rom label="vfs.lib.so"/>
 		<rom label="libc.lib.so"/>
 		<rom label="libm.lib.so"/>
-		<rom label="sdl.lib.so"/>
+		<rom label="sdl2.lib.so"/>
+		<rom label="egl.lib.so"/>
+		<rom label="mesa.lib.so"/>
+		<rom label="glapi.lib.so"/>
+		<rom label="libdrm.lib.so"/>
+		<rom label="vfs_gpu.lib.so"/>
+		<rom label="expat.lib.so"/>
+		<rom label="stdcxx.lib.so"/>
+		<rom label="zlib.lib.so"/>
 		<rom label="hatari"/>
-		<rom label="tos.img"/>
+		<rom label="etos256us.img"/>
+		<rom label="etos512us.img"/>
 	</content>
 
 </runtime>
