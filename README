@@ -14,5 +14,43 @@ testing the Goa tool.
 
 :Goa tool:
 
-  [https://github.com/nfeske/goa]
+  [https://github.com/genodelabs/goa]
+
+
+Example goarc
+-------------
+
+The following content is a useful starting point for a .goarc configuration
+when working with the projects within this repository.
+
+! # let Goa share the depot and public directories with Genode
+! set depot_dir  /path/to/src/genode/depot
+! set public_dir /path/to/src/genode/public
+!
+! # versions needed for using 'goa --run-as nfeske'
+! set run_as nfeske
+! set version(nfeske/pkg/drivers_interactive-linux)   2023-04-25
+! set version(nfeske/src/base-linux)                  2023-04-25
+! set version(nfeske/src/init)                        2023-04-25
+! set version(nfeske/src/linux_rtc_drv)               2023-04-25
+! set version(nfeske/src/nitpicker)                   2023-04-25
+! set version(nfeske/src/report_rom)                  2023-04-25
+! set version(nfeske/src/rom_filter)                  2023-04-25
+!
+! # created from Genode's source repositories
+! set version(nfeske/src/sdl2)       2023-04-27
+! set version(nfeske/api/sdl2)       2023-04-27
+! set version(nfeske/src/mesa)       2023-04-25
+! set version(nfeske/src/black_hole) 2023-04-25
+! set version(nfeske/src/expat)      2023-01-23
+! set version(nfeske/src/libdrm)     2023-04-25
+! set version(nfeske/src/vfs_gpu)    2023-04-25
+! set version(nfeske/src/lx_fs)      2023-04-25
+! set version(nfeske/src/gnumake)    2023-04-30
+!
+! # versions of the projects within the goa-playground
+! set version(nfeske/pkg/unix)          2023-06-16
+! set version(nfeske/pkg/m68k-sdk)      2023-06-16
+! set version(nfeske/src/binutils-m68k) 2023-06-16
+! set version(nfeske/api/binutils-m68k) 2023-06-16
 
