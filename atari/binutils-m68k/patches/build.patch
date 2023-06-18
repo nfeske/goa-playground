@@ -1,0 +1,18 @@
++++ src/Makefile.in	2023-06-18 04:24:39.641381777 +0200
+@@ -407,6 +407,7 @@
+ 
+ CFLAGS = @CFLAGS@
+ LDFLAGS = @LDFLAGS@
++LDFLAGS += $(LDLIBS)
+ LIBCFLAGS = $(CFLAGS)
+ CXXFLAGS = @CXXFLAGS@
+ LIBCXXFLAGS = $(CXXFLAGS) -fno-implicit-templates
+@@ -50293,4 +50294,8 @@
+ .NOEXPORT:
+ MAKEOVERRIDES=
+ 
++GOA_TARGETS := bfd binutils gas ld intl opcodes
++goa: $(addprefix install-strip-,$(GOA_TARGETS))
++$(addprefix install-strip-,$(GOA_TARGETS)) : $(addprefix all-,$(GOA_TARGETS))
++
+ # end of Makefile.in

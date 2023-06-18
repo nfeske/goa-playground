@@ -1,0 +1,19 @@
++++ src/libiberty/physmem.c	2023-06-17 23:10:44.067143384 +0200
+@@ -91,7 +91,7 @@
+   }
+ #endif
+ 
+-#if HAVE_PSTAT_GETSTATIC
++#if 0 && HAVE_PSTAT_GETSTATIC
+   { /* This works on hpux11.  */
+     struct pst_static pss;
+     if (0 <= pstat_getstatic (&pss, sizeof pss, 1, 0))
+@@ -195,7 +195,7 @@
+   }
+ #endif
+ 
+-#if HAVE_PSTAT_GETSTATIC && HAVE_PSTAT_GETDYNAMIC
++#if 0 && HAVE_PSTAT_GETSTATIC && HAVE_PSTAT_GETDYNAMIC
+   { /* This works on hpux11.  */
+     struct pst_static pss;
+     struct pst_dynamic psd;

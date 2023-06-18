@@ -1,0 +1,13 @@
+LICENSE   := GPLv3
+VERSION   := git
+DOWNLOADS := binutils.git
+
+BINUTILS := m68k-atari-mint-binutils-gdb
+
+URL(binutils) := --depth 1 https://github.com/freemint/$(BINUTILS)
+REV(binutils) := binutils-2_30-mint
+DIR(binutils) := src
+
+PATCHES := patches/build.patch \
+           patches/no_spawn.patch \
+           patches/physmem.patch

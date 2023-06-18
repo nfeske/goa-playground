@@ -1,0 +1,18 @@
++++ src/libiberty/pex-unix.c	2023-06-17 23:16:15.376790874 +0200
+@@ -39,6 +39,7 @@
+ #ifdef HAVE_UNISTD_H
+ #include <unistd.h>
+ #endif
++#include <fcntl.h>
+ 
+ #include <sys/types.h>
+ 
+@@ -390,7 +391,7 @@
+ 
+ /* Execute a child.  */
+ 
+-#if defined(HAVE_SPAWNVE) && defined(HAVE_SPAWNVPE)
++#if 0 && defined(HAVE_SPAWNVE) && defined(HAVE_SPAWNVPE)
+ /* Implementation of pex->exec_child using the Cygwin spawn operation.  */
+ 
+ /* Subroutine of pex_unix_exec_child.  Move OLD_FD to a new file descriptor
