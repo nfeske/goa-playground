@@ -1,0 +1,27 @@
+The original hash-table size triggers many 512 KiB alloc/free operations,
+each mapped to a RAM dataspace by Genode's libc. This severely impedes the
+performance. By reducing the hash-table size, the dynamic allocations stay
+in the bounds of "small" allocations, which do not result in immediate
+dataspace alloc/free operations.
+
++++ src/gas/hash.c	2023-06-19 23:40:11.927917772 +0200
+@@ -71,7 +71,7 @@
+    switch --reduce-memory-overheads, or set to other values by using
+    the --hash-size=<NUMBER> switch.  */
+ 
+-static unsigned long gas_hash_table_size = 65537;
++static unsigned long gas_hash_table_size = 4051;
+ 
+ void
+ set_gas_hash_table_size (unsigned long size)
++++ src/gas/input-file.c	2023-06-19 23:53:57.539392412 +0200
+@@ -37,7 +37,7 @@
+    The caller only asks once what BUFFER_SIZE is, and asks before
+    the nature of the input files (if any) is known.  */
+ 
+-#define BUFFER_SIZE (32 * 1024)
++#define BUFFER_SIZE (24 * 1024)
+ 
+ /* We use static data: the data area is not sharable.  */
+ 
+Binary files /mnt/src/goa-playground/atari/binutils-m68k/var/contrib/src/gas/.input-file.c.swp and src/gas/.input-file.c.swp differ
