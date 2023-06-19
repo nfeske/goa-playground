@@ -2,6 +2,7 @@
 
 	<requires>
 		<gui/>
+		<rtc/>
 		<timer/>
 		<rom label="vimrc"/>
 		<file_system label="home" writeable="yes"/>
