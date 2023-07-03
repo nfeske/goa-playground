@@ -1,0 +1,21 @@
+set version(nfeske/pkg/hatari)    2023-06-16
+set version(nfeske/pkg/hatari-tt) 2023-06-16
+set version(nfeske/pkg/m68k-sdk)  2023-06-16
+
+set version(nfeske/api/sdl2) 2023-04-27
+set version(nfeske/src/sdl2) 2023-04-27
+set version(nfeske/api/mesa) 2023-04-25
+set version(nfeske/src/mesa) 2023-04-25
+set version(nfeske/api/libdrm) 2023-04-25
+set version(nfeske/src/libdrm) 2023-04-25
+set version(nfeske/api/expat) 2022-11-16
+set version(nfeske/src/expat) 2023-01-23
+set version(nfeske/src/vfs_gpu) 2023-04-25
+set version(nfeske/src/gnumake) 2023-07-03
+
+
+set version(nfeske/pkg/unix_1st) 2023-07-03
+set version(nfeske/pkg/unix_2nd) 2023-07-03
+set version(nfeske/raw/unix_2nd) 2023-07-03
+set version(nfeske/pkg/unix_3rd) 2023-07-03
+set version(nfeske/raw/unix_3rd) 2023-07-03
