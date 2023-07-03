@@ -1,3 +1,4 @@
 nfeske/pkg/unix
+nfeske/raw/m68k-sdk
 nfeske/src/binutils-m68k
 nfeske/src/gnumake
