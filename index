@@ -1,0 +1,10 @@
+<index>
+	<supports arch="x86_64"/>
+	<supports arch="arm_v8a"/>
+
+	<index name="Atari">
+		<pkg path="hatari"    info="Hatari emulating an Atari Falcon 030"/>
+		<pkg path="hatari-tt" info="Hatari emulating an Atari TT"/>
+		<pkg path="m68k-sdk"  info="SDK with binutils for m68k"/>
+	</index>
+</index>
