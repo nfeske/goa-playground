@@ -2,6 +2,7 @@ genodelabs/src/libc
 genodelabs/src/vfs
 genodelabs/src/stdcxx
 genodelabs/src/zlib
+nfeske/src/hatari/2023-06-16
 nfeske/src/sdl2
 nfeske/src/mesa
 nfeske/src/libdrm
