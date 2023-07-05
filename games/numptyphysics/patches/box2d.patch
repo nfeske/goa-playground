@@ -1,0 +1,10 @@
++++ src/Box2D/Source/Common/b2Settings.h	2023-07-05 16:06:05.030472455 +0200
+@@ -23,7 +23,7 @@
+ #include <math.h>
+ 
+ #define B2_NOT_USED(x) 
+-#define b2Assert(A) assert(A)
++#define b2Assert(A)
+ 
+ 
+ // need to include NDS jtypes.h instead of 

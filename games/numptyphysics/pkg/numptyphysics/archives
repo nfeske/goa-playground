@@ -1,0 +1,10 @@
+genodelabs/src/libc
+genodelabs/src/vfs
+genodelabs/src/stdcxx
+genodelabs/src/zlib
+genodelabs/src/sdl
+nfeske/src/sdl_ttf
+nfeske/src/sdl_image
+nfeske/src/freetype
+nfeske/src/jpeg
+nfeske/src/libpng

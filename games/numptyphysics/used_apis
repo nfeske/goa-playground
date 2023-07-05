@@ -1,0 +1,6 @@
+genodelabs/api/stdcxx
+genodelabs/api/libc
+genodelabs/api/sdl
+genodelabs/api/zlib
+nfeske/api/sdl_ttf
+nfeske/api/sdl_image

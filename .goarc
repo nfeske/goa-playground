@@ -19,3 +19,12 @@ set version(nfeske/pkg/unix_2nd) 2023-07-03
 set version(nfeske/raw/unix_2nd) 2023-07-03
 set version(nfeske/pkg/unix_3rd) 2023-07-03
 set version(nfeske/raw/unix_3rd) 2023-07-03
+
+set version(nfeske/api/sdl_image) 2023-04-27
+set version(nfeske/src/sdl_image) 2023-04-27
+set version(nfeske/api/sdl_ttf)   2023-04-27
+set version(nfeske/src/sdl_ttf)   2023-04-27
+set version(nfeske/api/freetype)  2023-01-23
+set version(nfeske/src/freetype)  2023-01-23
+set version(nfeske/src/jpeg)      2023-01-23
+set version(nfeske/src/libpng)    2023-01-23
