@@ -1,0 +1,128 @@
+Avoid double-defined symbols at link time
+
++++ src/src/codegen/GenArith.h	2023-07-08 00:22:10.671179793 +0200
+@@ -12,24 +12,24 @@
+ #include <asm_types.h>
+ #include <CodeUtils.h>
+ 
+-int	const add_patterns[3];
+-int	const sub_patterns[3];
+-int	const cmp_patterns[3];
+-int const and_patterns[3];
+-int const eor_patterns[3];
+-int const or_patterns[3];
+-int const asl_patterns[3];
+-int const asr_patterns[3];
+-int const lsl_patterns[3];
+-int const lsr_patterns[3];
++extern int	const add_patterns[3];
++extern int	const sub_patterns[3];
++extern int	const cmp_patterns[3];
++extern int const and_patterns[3];
++extern int const eor_patterns[3];
++extern int const or_patterns[3];
++extern int const asl_patterns[3];
++extern int const asr_patterns[3];
++extern int const lsl_patterns[3];
++extern int const lsr_patterns[3];
+ 
+-int const incdec_patterns[2];
++extern int const incdec_patterns[2];
+ 
+-uint const mpy_pattern[4];
+-uint const macr_pattern[3];
+-uint const mpyr_pattern[3];
+-uint const max_pattern[2];
+-uint const mac_pattern[4];
++extern uint const mpy_pattern[4];
++extern uint const macr_pattern[3];
++extern uint const mpyr_pattern[3];
++extern uint const max_pattern[2];
++extern uint const mac_pattern[4];
+ 
+ void GenDiv(uint src_reg, uint dst_reg);
+ void GenDMac(uint modifier, uint plusminus, int val, uint dest_reg);
++++ src/src/codegen/GenBitOps.h	2023-07-08 00:25:11.388670795 +0200
+@@ -12,16 +12,16 @@
+ #include <asm_types.h>
+ #include <CodeUtils.h>
+ 
+-int const bchg_patterns[6];
+-int const bclr_patterns[6];
+-int const bset_patterns[6];
+-int const btst_patterns[6];
+-int const brclr_patterns[6];
+-int const brset_patterns[6];
+-int const bsclr_patterns[6];
+-int const bsset_patterns[6];
+-int const bra_patterns[3];
+-int const extract_patterns[6];
++extern int const bchg_patterns[6];
++extern int const bclr_patterns[6];
++extern int const bset_patterns[6];
++extern int const btst_patterns[6];
++extern int const brclr_patterns[6];
++extern int const brset_patterns[6];
++extern int const bsclr_patterns[6];
++extern int const bsset_patterns[6];
++extern int const bra_patterns[3];
++extern int const extract_patterns[6];
+ 
+ void GenBitOp(const int *insn_patt, int val, int xory, bcode *par_move);
+ void GenBitOpReg(uint insn_patt, int val, int dest_reg);
++++ src/src/codegen/GenMisc.h	2023-07-08 00:23:19.573931029 +0200
+@@ -12,20 +12,20 @@
+ #include <asm_types.h>
+ #include <CodeUtils.h>
+ 
+-uint const jmp_pattern[2];
+-uint const jcc_pattern[2];
+-uint const jsr_pattern[2];
+-uint const jscc_pattern[2];
++extern uint const jmp_pattern[2];
++extern uint const jcc_pattern[2];
++extern uint const jsr_pattern[2];
++extern uint const jscc_pattern[2];
+ 
+-int const jclr_patterns[6];
+-int const jsclr_patterns[6];
+-int const jset_patterns[6];
+-int const jsset_patterns[6];
++extern int const jclr_patterns[6];
++extern int const jsclr_patterns[6];
++extern int const jset_patterns[6];
++extern int const jsset_patterns[6];
+ 
+-uint const movec_pattern1[2];
+-uint const movec_pattern2[2];
+-uint const movem_pattern1[2];
+-uint const movem_pattern2[2];
++extern uint const movec_pattern1[2];
++extern uint const movec_pattern2[2];
++extern uint const movem_pattern1[2];
++extern uint const movem_pattern2[2];
+ 
+ void GenOneParamParMove(uint insn_patt, uint reg, bcode *par_move);
+ void GenBccRelTarger(uint insn_patt, raddr *rel_target);
++++ src/src/codegen/GenParMoves.h	2023-07-08 00:25:35.681049265 +0200
+@@ -12,13 +12,13 @@
+ #include <asm_types.h>
+ #include <CodeUtils.h>
+ 
+-uint const xmem_reg_pattern1[2];
+-uint const xmem_reg_pattern2[2];
+-uint const ymem_reg_pattern1[2];
+-uint const ymem_reg_pattern2[2];
+-uint const lmem_reg_pattern1[2];
+-uint const lmem_reg_pattern2[2];
+-uint const XRegYReg_pattern[4];
++extern uint const xmem_reg_pattern1[2];
++extern uint const xmem_reg_pattern2[2];
++extern uint const ymem_reg_pattern1[2];
++extern uint const ymem_reg_pattern2[2];
++extern uint const lmem_reg_pattern1[2];
++extern uint const lmem_reg_pattern2[2];
++extern uint const XRegYReg_pattern[4];
+ 
+ bcode GenParIFcc(uint condition, uint opcode);
+ bcode GenParExpReg(int val, uint dst_reg);

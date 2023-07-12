@@ -1,0 +1,10 @@
+LICENSE   := GPLv2
+VERSION   := git
+DOWNLOADS := asm56k.git
+
+URL(asm56k) := https://github.com/th-otto/asm56k.git
+REV(asm56k) := 45886e998db
+DIR(asm56k) := src
+
+PATCHES := patches/makefile.patch \
+           patches/extern_decl.patch
