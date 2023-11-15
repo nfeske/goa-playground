@@ -1,5 +1,6 @@
 genodelabs/src/bash
 genodelabs/src/vfs
+genodelabs/src/init
 genodelabs/src/fs_rom
 genodelabs/src/libc
 genodelabs/src/posix

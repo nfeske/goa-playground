@@ -6,6 +6,7 @@
 	</requires>
 
 	<content>
+		<rom label="init"/>
 		<rom label="bash.tar"/>
 		<rom label="vfs"/>
 		<rom label="vfs.lib.so"/>
