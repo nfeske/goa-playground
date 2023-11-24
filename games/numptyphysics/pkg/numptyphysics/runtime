@@ -1,33 +1,41 @@
 <runtime ram="128M" caps="500" binary="numptyphysics">
 
 	<requires>
-		<gui/> <timer/>
+		<rom label="mesa_gpu_drv.lib.so"/>
+		<gpu/> <gui/> <timer/>
 	</requires>
 
 	<config ld_verbose="yes">
 		<vfs>
 			<tar name="numptyphysics_data.tar"/>
 			<dir name="dev">
-				<log/> <inline name="rtc">2018-01-01 00:01</inline>
+				<gpu/> <log/> <inline name="rtc">2018-01-01 00:01</inline>
 			</dir>
 			<ram/>
 		</vfs>
-		<libc stdout="/dev/log" stderr="/dev/log" rtc="/dev/rtc"/>
+		<libc stdout="/dev/log" stderr="/dev/log" rtc="/dev/rtc" />
+		<arg value="/numptyphysics"/> <!-- slash is expected by Os::init -->
 	</config>
 
 	<content>
 		<rom label="numptyphysics"/>
 		<rom label="vfs.lib.so"/>
+		<rom label="vfs_gpu.lib.so"/>
 		<rom label="freetype.lib.so"/>
 		<rom label="jpeg.lib.so"/>
 		<rom label="libc.lib.so"/>
 		<rom label="libm.lib.so"/>
-		<rom label="sdl.lib.so"/>
-		<rom label="sdl_image.lib.so"/>
-		<rom label="sdl_ttf.lib.so"/>
+		<rom label="sdl2.lib.so"/>
+		<rom label="mesa.lib.so"/>
+		<rom label="glapi.lib.so"/>
+		<rom label="egl.lib.so"/>
+		<rom label="libdrm.lib.so"/>
+		<rom label="sdl2_image.lib.so"/>
+		<rom label="sdl2_ttf.lib.so"/>
 		<rom label="stdcxx.lib.so"/>
 		<rom label="zlib.lib.so"/>
 		<rom label="libpng.lib.so"/>
+		<rom label="expat.lib.so"/>
 		<rom label="numptyphysics_data.tar"/>
 	</content>
 

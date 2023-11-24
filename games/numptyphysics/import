@@ -4,10 +4,7 @@ DOWNLOADS := numptyphysics.git
 
 URL(numptyphysics) := https://gitlab.com/thp/numptyphysics.git
 DIR(numptyphysics) := src/app/numptyphysics
-REV(numptyphysics) := 336729c44c9ced3907d049cc1c1130a26c5708a3
+REV(numptyphysics) := 9b9824b253c6cc941c68c28f2875d12c2b1c31ac
 DIR(numptyphysics) := src
 
-PATCHES := patches/canvas.patch \
-           patches/box2d.patch \
-           patches/makefile.patch \
-           patches/swipe.patch
+PATCHES := patches/build.patch

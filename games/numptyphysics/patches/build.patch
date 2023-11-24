@@ -1,0 +1,75 @@
++++ src/external/Box2D/Source/Makefile
+@@ -6,7 +6,7 @@
+ TARGETS += Gen/nds-float/lib/libbox2d.a Gen/nds-fixed/lib/libbox2d.a
+ endif
+ 
+-CXXFLAGS=	-g -O2
++override CXXFLAGS +=	-g -O2 $(CPPFLAGS)
+ 
+ SOURCES = \
+ 	./Dynamics/b2Body.cpp \
++++ src/makefile
+@@ -19,7 +19,7 @@
+ $(info VERSION: $(VERSION))
+ 
+ SOURCES := $(wildcard src/*.cpp)
+-CXXFLAGS += -std=c++11 -Isrc -Wall -Wno-sign-compare -DAPP=\"$(APP)\" -DVERSION=\"$(VERSION)\"
++override CXXFLAGS += $(CPPFLAGS) -std=c++11 -Isrc -Wall -Wno-sign-compare -DAPP=\"$(APP)\" -DVERSION=\"$(VERSION)\"
+ 
+ ifdef DEBUG
+ 	CXXFLAGS += -g
+@@ -37,7 +37,7 @@
+ 
+ $(TARGET): $(OBJECTS) $(LOCAL_LIBS)
+ 	$(SILENTMSG) "\tLD\t$@\n"
+-	$(SILENTCMD) $(CXX) -o $@ $^ $(LIBS)
++	$(SILENTCMD) $(CXX) -o $@ $^ $(LDLIBS) $(LDFLAGS)
+ 
+ clean: $(ADDITIONAL_CLEAN_TARGETS)
+ 	$(SILENTMSG) "\tCLEAN\n"
++++ src/mk/box2d.mk
+@@ -1,5 +1,5 @@
+ # Box2D Library
+-CXXFLAGS += -Iexternal/Box2D/Include
++override CXXFLAGS += -Iexternal/Box2D/Include
+ BOX2D_SOURCE := external/Box2D/Source
+ BOX2D_LIBRARY := Gen/float/libbox2d.a
+ 
++++ src/mk/funcs.mk
+@@ -3,12 +3,12 @@
+ endef
+ 
+ define add_platform
+-CXXFLAGS += -Iplatform/$(1)
++override CXXFLAGS += -Iplatform/$(1)
+ SOURCES += $(wildcard platform/$(1)/*.cpp)
+ endef
+ 
+ define add_external
+-CXXFLAGS += -Iexternal/$(1)
++override CXXFLAGS += -Iexternal/$(1)
+ SOURCES += $(wildcard external/$(1)/*.cpp)
+ endef
+ 
++++ src/mk/glaserl.mk
+@@ -1,5 +1,5 @@
+ # Glaserl Library
+-CXXFLAGS += -Iexternal/glaserl
++override CXXFLAGS += -Iexternal/glaserl
+ GLASERL_SOURCE := external/glaserl
+ GLASERL_LIBRARY := libglaserl.a
+ 
++++ src/platform/freedesktop/OsFreeDesktop.h
+@@ -17,6 +17,7 @@
+ 
+ #include "Os.h"
+ 
++#define _WIN32 /* __GENODE__ */
+ #ifndef _WIN32
+ #include <gio/gio.h>
+ 
+@@ -66,3 +67,4 @@
+     }
+ #endif
+ };
++#undef _WIN32 /* __GENODE__ */
