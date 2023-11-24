@@ -1,7 +1,6 @@
 nfeske/pkg/unix
-nfeske/raw/m68k-sdk
 nfeske/src/binutils-m68k
 nfeske/src/gnumake
 nfeske/src/asm56k
 nfeske/src/sed
-nfeske/src/pcre
+genodelabs/src/pcre

@@ -2,10 +2,10 @@ genodelabs/src/libc
 genodelabs/src/vfs
 genodelabs/src/stdcxx
 genodelabs/src/zlib
-nfeske/src/hatari/2023-06-16
 nfeske/src/sdl2
-nfeske/src/mesa
-nfeske/src/libdrm
-nfeske/src/expat
-nfeske/src/vfs_gpu
+genodelabs/src/mesa
+genodelabs/src/libdrm
+genodelabs/src/expat
+genodelabs/src/vfs_gpu
+nfeske/src/libiconv
 nfeske/raw/emutos/1.2.1

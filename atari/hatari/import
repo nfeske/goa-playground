@@ -3,8 +3,9 @@ VERSION   := git
 DOWNLOADS := hatari.git
 
 URL(hatari) := https://github.com/hatari/hatari.git
-REV(hatari) := 510557e
+REV(hatari) := 96d7e168b8a79d9c0add5308e17ad89e952b1071
 DIR(hatari) := src
 
 PATCHES := patches/desktop_size.patch \
-           patches/find_sdl2.patch
+           patches/find_sdl2.patch \
+           patches/no_python_ui.patch

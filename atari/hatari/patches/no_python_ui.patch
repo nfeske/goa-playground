@@ -1,0 +1,12 @@
+The build of python-ui modifies the src directory. Skip it.
+
++++ src/CMakeLists.txt	2023-11-27 12:06:45.146406087 +0100
+@@ -364,7 +364,7 @@
+ 	add_subdirectory(tests)
+ endif(NOT CMAKE_CROSSCOMPILING)
+ 
+-include(FindPythonInterp)
++#include(FindPythonInterp)
+ if(PYTHONINTERP_FOUND AND PYTHON_VERSION_MAJOR LESS 3)
+ 	message("Note: Hatari needs at least Python 3 ... ignoring older version")
+ 	unset(PYTHONINTERP_FOUND)

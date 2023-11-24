@@ -1,0 +1,29 @@
+set version(nfeske/pkg/hatari)        2023-11-26
+set version(nfeske/src/hatari)        2023-11-25
+set version(nfeske/pkg/hatari-tt)     2023-11-26
+set version(nfeske/pkg/m68k-sdk)      2023-11-25
+set version(nfeske/raw/m68k-sdk)      2023-11-25
+set version(nfeske/src/asm56k)        2023-11-25
+set version(nfeske/src/binutils-m68k) 2023-11-25
+set version(nfeske/raw/unix)          2023-11-25
+set version(nfeske/pkg/unix)          2023-11-25
+set version(nfeske/pkg/numptyphysics) 2023-11-25
+set version(nfeske/src/numptyphysics) 2023-11-25
+
+set version(nfeske/api/sdl2)    2023-04-27
+set version(nfeske/src/sdl2)    2023-04-27
+set version(nfeske/src/gnumake) 2023-11-27
+
+set version(nfeske/pkg/unix_1st) 2023-11-25
+set version(nfeske/pkg/unix_2nd) 2023-11-25
+set version(nfeske/raw/unix_2nd) 2023-11-25
+set version(nfeske/pkg/unix_3rd) 2023-11-25
+set version(nfeske/raw/unix_3rd) 2023-11-25
+
+set version(nfeske/api/sdl)       2023-11-24
+set version(nfeske/src/sdl)       2023-11-24
+set version(nfeske/api/sdl_image) 2023-04-27
+set version(nfeske/src/sdl_image) 2023-11-24
+set version(nfeske/api/sdl_ttf)   2023-04-27
+set version(nfeske/src/sdl_ttf)   2023-04-27
+set version(nfeske/src/sed)       2023-11-27
