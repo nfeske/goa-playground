@@ -1,0 +1,34 @@
+<runtime ram="128M" caps="500" binary="atari800">
+
+	<requires>
+		<gui/> <rtc/> <timer/>
+	</requires>
+
+	<config>
+		<libc stdout="/dev/log" stderr="/dev/log" rtc="/dev/rtc"/>
+		<vfs>
+			<tar name="atari800_rom.tar" />
+			<dir name="dev"> <log/> <inline name="rtc">2000-01-01 00:00</inline> </dir>
+			<ram/>
+		</vfs>
+		<arg value="atari800"/>
+		<arg value="-osb_rom"/>   <arg value="ATARIOSB.ROM"/>
+		<arg value="-xlxe_rom"/>  <arg value="ATARIXL.ROM"/>
+		<arg value="-basic_rom"/> <arg value="ATARIBAS.ROM"/>
+		<arg value="-basic"/>
+		<arg value="-showspeed"/>
+		<arg value="-nosound"/>
+		<arg value="-win-width"/>  <arg value="640"/>
+		<arg value="-win-height"/> <arg value="480"/>
+	</config>
+
+	<content>
+		<rom label="vfs.lib.so"/>
+		<rom label="libc.lib.so"/>
+		<rom label="libm.lib.so"/>
+		<rom label="sdl.lib.so"/>
+		<rom label="atari800"/>
+		<rom label="atari800_rom.tar"/>
+	</content>
+
+</runtime>

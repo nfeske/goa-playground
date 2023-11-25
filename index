@@ -6,6 +6,7 @@
 		<pkg path="hatari"    info="Hatari emulating an Atari Falcon 030"/>
 		<pkg path="hatari-tt" info="Hatari emulating an Atari TT"/>
 		<pkg path="m68k-sdk"  info="SDK with binutils for m68k"/>
+		<pkg path="atari800"  info="Atari800 emulator"/>
 	</index>
 	<index name="Games">
 		<pkg path="numptyphysics" info="Numpty Physics"/>

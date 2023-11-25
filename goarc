@@ -9,6 +9,8 @@ set version(nfeske/raw/unix)          2023-11-25
 set version(nfeske/pkg/unix)          2023-11-25
 set version(nfeske/pkg/numptyphysics) 2023-11-25
 set version(nfeske/src/numptyphysics) 2023-11-25
+set version(nfeske/pkg/atari800)      2023-11-25
+set version(nfeske/src/atari800)      2023-11-25
 
 set version(nfeske/api/sdl2)    2023-04-27
 set version(nfeske/src/sdl2)    2023-04-27

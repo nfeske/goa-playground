@@ -1,0 +1,11 @@
+LICENSE   := GPLv2
+VERSION   := git
+DOWNLOADS := atari800.git xformer.archive
+
+URL(atari800) := https://github.com/atari800/atari800.git
+REV(atari800) := ATARI800_5_0_0
+DIR(atari800) := src
+
+URL(xformer) := http://prdownloads.sf.net/atari800/xf25.zip
+SHA(xformer) := 98ae0ad10413dd6f35ed80f5662dba6d790def70c7829046e52012a03b574b8a
+DIR(xformer) := src/xformer
