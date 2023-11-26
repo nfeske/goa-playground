@@ -1,0 +1,38 @@
+<runtime ram="128M" caps="500" binary="load81">
+
+	<requires>
+		<gui/> <rtc/> <timer/>
+		<file_system label="src" writeable="yes"/>
+	</requires>
+
+	<config>
+		<libc stdout="/dev/log" stderr="/dev/log" rtc="/dev/rtc"/>
+		<vfs>
+			<dir name="dev"> <log/> <inline name="rtc">2000-01-01 00:00</inline> </dir>
+			<fs label="src"/>
+			<import overwrite="no">
+				<tar name="examples.tar"/>
+				<rom name="wave.lua" binary="no"/>
+			</import>
+		</vfs>
+		<arg value="load81"/>
+		<arg value="wave.lua"/>
+	</config>
+
+	<content>
+		<rom label="vfs.lib.so"/>
+		<rom label="vfs_import.lib.so"/>
+		<rom label="libc.lib.so"/>
+		<rom label="libm.lib.so"/>
+		<rom label="sdl.lib.so"/>
+		<rom label="sdl_image.lib.so"/>
+		<rom label="sdl_gfx.lib.so"/>
+		<rom label="jpeg.lib.so"/>
+		<rom label="libpng.lib.so"/>
+		<rom label="zlib.lib.so"/>
+		<rom label="load81"/>
+		<rom label="examples.tar"/>
+		<rom label="wave.lua"/>
+	</content>
+
+</runtime>

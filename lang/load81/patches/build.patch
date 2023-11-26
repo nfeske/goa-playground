@@ -1,0 +1,38 @@
++++ src/lua/src/Makefile
+@@ -8,11 +8,11 @@
+ PLAT= none
+ 
+ CC= gcc
+-CFLAGS= -O2 -Wall $(MYCFLAGS)
++override CFLAGS+= -O2 -Wall $(MYCFLAGS)
+ AR= ar rcu
+ RANLIB= ranlib
+ RM= rm -f
+-LIBS= -lm $(MYLIBS)
++override LIBS += $(MYLIBS)
+ 
+ MYCFLAGS=
+ MYLDFLAGS=
+@@ -52,10 +52,10 @@
+ 	$(RANLIB) $@
+ 
+ $(LUA_T): $(LUA_O) $(LUA_A)
+-	$(CC) -o $@ $(MYLDFLAGS) $(LUA_O) $(LUA_A) $(LIBS)
++	$(CC) -o $@ $(MYLDFLAGS) $(LUA_O) $(LUA_A) $(LDLIBS) $(LIBS)
+ 
+ $(LUAC_T): $(LUAC_O) $(LUA_A)
+-	$(CC) -o $@ $(MYLDFLAGS) $(LUAC_O) $(LUA_A) $(LIBS)
++	$(CC) -o $@ $(MYLDFLAGS) $(LUAC_O) $(LUA_A) $(LDLIBS) $(LIBS)
+ 
+ clean:
+ 	$(RM) $(ALL_T) $(ALL_O)
++++ src/Makefile
+@@ -1,6 +1,5 @@
+-PKGS=sdl SDL_gfx SDL_image
+-CFLAGS=-O2 -Wall -W -Ilua/src `pkg-config --cflags $(PKGS)`
+-LDLIBS=lua/src/liblua.a -lm `pkg-config --libs $(PKGS)`
++override CFLAGS += -O2 -Wall -W -Ilua/src
++override LDLIBS += lua/src/liblua.a
+ 
+ all: load81 
+ 

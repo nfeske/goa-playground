@@ -1,0 +1,9 @@
+LICENSE   := BSD
+VERSION   := git
+DOWNLOADS := load81.git
+
+URL(load81) := https://github.com/antirez/load81.git
+REV(load81) := bf87d73
+DIR(load81) := src
+
+PATCHES := patches/build.patch
