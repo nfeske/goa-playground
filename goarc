@@ -7,7 +7,7 @@ set version(nfeske/src/asm56k)        2023-11-25
 set version(nfeske/src/binutils-m68k) 2023-11-25
 set version(nfeske/raw/unix)          2023-11-25
 set version(nfeske/pkg/unix)          2023-11-25
-set version(nfeske/pkg/numptyphysics) 2023-11-25
+set version(nfeske/pkg/numptyphysics) 2023-11-27
 set version(nfeske/src/numptyphysics) 2023-11-25
 set version(nfeske/pkg/atari800)      2023-11-25
 set version(nfeske/src/atari800)      2023-11-25

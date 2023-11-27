@@ -12,3 +12,4 @@ nfeske/src/sdl2
 nfeske/src/sdl2_ttf
 nfeske/src/sdl2_image
 nfeske/src/expat
+nfeske/src/libiconv

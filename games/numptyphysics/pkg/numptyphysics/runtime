@@ -36,6 +36,7 @@
 		<rom label="zlib.lib.so"/>
 		<rom label="libpng.lib.so"/>
 		<rom label="expat.lib.so"/>
+		<rom label="libiconv.lib.so"/>
 		<rom label="numptyphysics_data.tar"/>
 	</content>
 
