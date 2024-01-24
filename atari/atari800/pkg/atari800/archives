@@ -1,4 +1,4 @@
-genodelabs/src/libc
+nfeske/src/libc
 genodelabs/src/vfs
 genodelabs/src/zlib
 nfeske/src/sdl
