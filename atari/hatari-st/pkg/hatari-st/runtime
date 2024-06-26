@@ -1,0 +1,49 @@
+<runtime ram="128M" caps="500" binary="hatari">
+
+	<requires>
+		<gui/> <rtc/> <timer/> <gpu/> <play/> <record/>
+		<file_system label="drive_c" writeable="yes"/>
+		<rom label="mesa_gpu_drv.lib.so"/>
+	</requires>
+
+	<config ld_verbose="yes">
+		<vfs>
+			<dir name="dev"> <log/> <gpu/>
+				<inline name="rtc">2018-01-01 00:01</inline>
+				<oss name="dsp" min_ofrage_size="8192"/>
+			</dir>
+			<dir name="share"> <dir name="hatari">
+				<rom name="tos.img" label="etos256uk.img"/> </dir> </dir>
+			<dir name="c">
+				<fs label="drive_c"/>
+			</dir>
+		</vfs>
+		<libc stdout="/dev/log" stderr="/dev/log" rtc="/dev/rtc"/>
+
+		<arg value="hatari"/>
+		<arg value="--tos"/>          <arg value="/share/hatari/tos.img"/>
+		<arg value="--machine"/>      <arg value="st"/>
+		<arg value="--monitor"/>      <arg value="rgb"/>
+		<arg value="-s"/>             <arg value="1"/>
+		<arg value="-d"/>             <arg value="/c"/>
+		<arg value="--timer-d"/>      <arg value="1"/>
+		<arg value="--resizable"/>    <arg value="1"/>
+		<arg value="--mousewarp"/>    <arg value="1"/>
+		<arg value="--frameskips"/>   <arg value="0"/>
+		<arg value="--confirm-quit"/> <arg value="0"/>
+		<arg value="--dsp"/>          <arg value="none"/>
+		<arg value="--statusbar"/>    <arg value="1"/>
+		<arg value="--borders"/>      <arg value="1"/>
+		<arg value="--cpu-exact"/>    <arg value="0"/>
+		<arg value="--fast-boot"/>    <arg value="1"/>
+		<arg value="--max-width"/>    <arg value="1280"/>
+		<arg value="--max-height"/>   <arg value="960"/>
+		<arg value="--compatible"/>   <arg value="0"/>
+	</config>
+
+	<content>
+		<rom label="hatari"/>
+		<rom label="etos256uk.img"/>
+	</content>
+
+</runtime>
