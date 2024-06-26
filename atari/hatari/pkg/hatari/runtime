@@ -1,7 +1,7 @@
 <runtime ram="128M" caps="500" binary="hatari">
 
 	<requires>
-		<gui/> <rtc/> <timer/> <gpu/>
+		<gui/> <rtc/> <timer/> <gpu/> <play/> <record/>
 		<file_system label="drive_c" writeable="yes"/>
 		<rom label="mesa_gpu_drv.lib.so"/>
 	</requires>
@@ -10,6 +10,7 @@
 		<vfs>
 			<dir name="dev"> <log/> <gpu/>
 				<inline name="rtc">2018-01-01 00:01</inline>
+				<oss name="dsp" min_ofrage_size="8192"/>
 			</dir>
 			<dir name="share"> <dir name="hatari">
 				<rom name="tos.img" label="etos512us.img"/> </dir> </dir>
@@ -39,6 +40,7 @@
 
 	<content>
 		<rom label="vfs.lib.so"/>
+		<rom label="vfs_oss.lib.so"/>
 		<rom label="libc.lib.so"/>
 		<rom label="libm.lib.so"/>
 		<rom label="sdl2.lib.so"/>

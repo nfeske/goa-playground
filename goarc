@@ -1,4 +1,4 @@
-set version(nfeske/src/hatari)        2023-11-25
+set version(nfeske/src/hatari)        2024-04-30
 set version(nfeske/src/asm56k)        2023-11-25
 set version(nfeske/src/binutils-m68k) 2023-11-25
 set version(nfeske/src/numptyphysics) 2023-11-25
@@ -9,8 +9,8 @@ set version(nfeske/raw/m68k-sdk)      2023-11-25
 set version(nfeske/raw/unix)          2023-11-25
 set version(nfeske/raw/load81)        2024-04-26
 set version(nfeske/raw/hatari)        2024-04-26
-set version(nfeske/pkg/hatari)        2024-04-26
-set version(nfeske/pkg/hatari-tt)     2024-04-26
+set version(nfeske/pkg/hatari)        2024-04-30
+set version(nfeske/pkg/hatari-tt)     2024-05-02
 set version(nfeske/pkg/m68k-sdk)      2024-04-26
 set version(nfeske/pkg/unix)          2024-04-26
 set version(nfeske/pkg/numptyphysics) 2024-04-26
