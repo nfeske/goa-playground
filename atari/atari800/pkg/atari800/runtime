@@ -18,8 +18,8 @@
 		<arg value="-basic"/>
 		<arg value="-showspeed"/>
 		<arg value="-nosound"/>
-		<arg value="-win-width"/>  <arg value="640"/>
-		<arg value="-win-height"/> <arg value="480"/>
+		<arg value="-win-width"/>  <arg value="720"/>
+		<arg value="-win-height"/> <arg value="540"/>
 	</config>
 
 	<content>
