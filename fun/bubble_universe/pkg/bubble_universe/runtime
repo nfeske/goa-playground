@@ -1,0 +1,34 @@
+<runtime ram="64M" caps="500" binary="main">
+
+	<requires>
+		<gui/> <timer/>
+		<rom label="mesa_gpu_drv.lib.so"/>
+	</requires>
+
+	<config>
+		<vfs>
+			<dir name="dev"> <log/>
+				<inline name="rtc">2018-01-01 00:01</inline>
+			</dir>
+		</vfs>
+		<libc stdout="/dev/log" stderr="/dev/log" rtc="/dev/rtc"/>
+	</config>
+
+	<content>
+		<rom label="main"/>
+		<rom label="vfs.lib.so"/>
+		<rom label="libc.lib.so"/>
+		<rom label="libm.lib.so"/>
+		<rom label="sdl2.lib.so"/>
+		<rom label="egl.lib.so"/>
+		<rom label="mesa.lib.so"/>
+		<rom label="glapi.lib.so"/>
+		<rom label="libdrm.lib.so"/>
+		<rom label="vfs_gpu.lib.so"/>
+		<rom label="expat.lib.so"/>
+		<rom label="stdcxx.lib.so"/>
+		<rom label="zlib.lib.so"/>
+		<rom label="libiconv.lib.so"/>
+	</content>
+
+</runtime>

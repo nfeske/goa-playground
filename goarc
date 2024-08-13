@@ -17,6 +17,9 @@ set version(nfeske/pkg/numptyphysics) 2024-04-26
 set version(nfeske/pkg/atari800)      2024-04-26
 set version(nfeske/pkg/load81)        2024-04-26
 
+set version(nfeske/src/bubble_universe) 2024-08-15
+set version(nfeske/pkg/bubble_universe) 2024-08-15
+
 set version(nfeske/api/sdl2)    2024-04-11
 set version(nfeske/src/sdl2)    2024-04-11
 set version(nfeske/src/gnumake) 2024-04-26

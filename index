@@ -11,6 +11,9 @@
 	<index name="Games">
 		<pkg path="numptyphysics" info="Numpty Physics"/>
 	</index>
+	<index name="Fun">
+		<pkg path="bubble_universe" info="Bubble universe"/>
+	</index>
 	<index name="Programming">
 		<pkg path="load81" info="Load81 Lua environment"/>
 	</index>
