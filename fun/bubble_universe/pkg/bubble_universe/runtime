@@ -6,6 +6,7 @@
 	</requires>
 
 	<config>
+		<initial width="1024" height="1024"/>
 		<vfs>
 			<dir name="dev"> <log/>
 				<inline name="rtc">2018-01-01 00:01</inline>

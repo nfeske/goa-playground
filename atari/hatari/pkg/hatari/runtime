@@ -6,7 +6,8 @@
 		<rom label="mesa_gpu_drv.lib.so"/>
 	</requires>
 
-	<config ld_verbose="yes">
+	<config ld_verbose="yes" mouse_grab="yes">
+		<initial width="640" height="512"/>
 		<vfs>
 			<dir name="dev"> <log/> <gpu/>
 				<inline name="rtc">2018-01-01 00:01</inline>

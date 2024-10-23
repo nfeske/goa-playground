@@ -4,6 +4,6 @@ genodelabs/src/vfs_import
 genodelabs/src/jpeg
 genodelabs/src/libpng
 genodelabs/src/zlib
-nfeske/src/sdl
+genodelabs/src/sdl
 nfeske/src/sdl_image
 nfeske/src/sdl_gfx

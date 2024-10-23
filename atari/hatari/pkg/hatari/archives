@@ -7,6 +7,6 @@ genodelabs/src/mesa
 genodelabs/src/libdrm
 genodelabs/src/expat
 genodelabs/src/vfs_gpu
-genodelabs/src/vfs_oss/2024-04-11
+genodelabs/src/vfs_oss
 nfeske/src/libiconv/2024-04-11
 nfeske/raw/emutos/1.2.1
