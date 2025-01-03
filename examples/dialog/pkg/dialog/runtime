@@ -1,0 +1,25 @@
+<runtime ram="10M" caps="300" binary="main">
+
+	<requires>
+		<gui/>
+		<file_system label="fonts"/>
+		<timer/>
+	</requires>
+
+	<config/>
+
+	<content>
+		<rom label="main"/>
+		<rom label="sandbox.lib.so"/>
+		<rom label="menu_view"/>
+		<rom label="menu_view_styles.tar"/>
+		<rom label="dialog.lib.so"/>
+		<rom label="vfs.lib.so"/>
+		<rom label="vfs_ttf.lib.so"/>
+		<rom label="libc.lib.so"/>
+		<rom label="libm.lib.so"/>
+		<rom label="libpng.lib.so"/>
+		<rom label="zlib.lib.so"/>
+	</content>
+
+</runtime>
