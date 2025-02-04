@@ -1,0 +1,9 @@
+LICENSE   := public domain
+VERSION   := 1992
+DOWNLOADS := asm56000.git
+
+URL(asm56000) := https://github.com/insane-rabenauge/dsptools.git
+REV(asm56000) := 4cb3624
+DIR(asm56000) := src
+
+PATCHES := patches/makefile.patch

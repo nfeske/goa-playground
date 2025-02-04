@@ -1,5 +1,6 @@
 set version(nfeske/src/hatari)        2024-11-25
 set version(nfeske/src/asm56k)        2024-10-08
+set version(nfeske/src/asm56000)      2025-03-15
 set version(nfeske/src/binutils-m68k) 2024-10-08
 set version(nfeske/src/numptyphysics) 2024-10-08
 set version(nfeske/src/atari800)      2024-11-25
