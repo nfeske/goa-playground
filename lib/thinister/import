@@ -1,0 +1,10 @@
+LICENSE   := public domain
+VERSION   := 2025-03-15
+DOWNLOADS := thinister.archive
+
+URL(thinister) := https://codeberg.org/nfeske/ThiniSTer/archive/master.tar.gz
+SHA(thinister) := 761c0accc5d7bcccaf56d1644d1f5b3526ae7dc24f2707e55d636e9417e0ec0d
+DIR(thinister) := extracted
+
+DIRS = raw
+DIR_CONTENT(raw) = $(addprefix extracted/,12.bdf 12-bold.bdf)
