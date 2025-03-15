@@ -21,6 +21,7 @@ set version(nfeske/pkg/load81)        2024-10-08
 set version(nfeske/src/bubble_universe) 2024-11-05
 set version(nfeske/pkg/bubble_universe) 2024-11-05
 
+set version(nfeske/src/vfs_bdf)            2025-03-15
 set version(nfeske/api/sdl2)    2024-04-11
 set version(nfeske/src/sdl2)    2024-11-19
 set version(nfeske/src/gnumake) 2024-04-26
