@@ -1,6 +1,6 @@
 nfeske/pkg/unix
 nfeske/src/binutils-m68k
 nfeske/src/gnumake
-nfeske/src/asm56k
+nfeske/src/asm56000
 nfeske/src/sed
 genodelabs/src/pcre

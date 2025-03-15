@@ -39,7 +39,7 @@
 		<rom label="bash.tar"/>
 		<rom label="binutils-m68k.tar"/>
 		<rom label="make.tar"/>
-		<rom label="asm56k.tar"/>
+		<rom label="asm56000.tar"/>
 		<rom label="sed.tar"/>
 
 		<!-- data -->

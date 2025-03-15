@@ -6,14 +6,14 @@ set version(nfeske/src/numptyphysics) 2024-10-08
 set version(nfeske/src/atari800)      2024-11-25
 set version(nfeske/raw/atari800)      2024-10-08
 set version(nfeske/src/load81)        2024-10-08
-set version(nfeske/raw/m68k-sdk)      2024-10-08
+set version(nfeske/raw/m68k-sdk)      2025-03-15
 set version(nfeske/raw/unix)          2024-10-08
 set version(nfeske/raw/load81)        2024-10-08
 set version(nfeske/raw/hatari)        2024-10-08
 set version(nfeske/pkg/hatari)        2024-11-25
 set version(nfeske/pkg/hatari-tt)     2024-11-25
 set version(nfeske/pkg/hatari-st)     2024-11-25
-set version(nfeske/pkg/m68k-sdk)      2024-10-08
+set version(nfeske/pkg/m68k-sdk)      2025-03-15
 set version(nfeske/pkg/unix)          2024-10-08
 set version(nfeske/pkg/numptyphysics) 2024-10-08
 set version(nfeske/pkg/atari800)      2024-11-25
