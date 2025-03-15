@@ -1,0 +1,37 @@
+<runtime ram="4M" caps="150" binary="vfs">
+
+	<provides> <file_system/> </provides>
+
+	<config>
+		<vfs>
+			<rom name="12.bdf"/>
+			<rom name="12-bold.bdf"/>
+			<dir name="fonts">
+				<dir name="title">
+					<bdf name="regular" path="12-bold.bdf" scale="2" highlighted="no" interlaced="yes" cache="256K"/>
+				</dir>
+				<dir name="text">
+					<bdf name="regular" path="12.bdf" scale="2" highlighted="no" interlaced="yes" cache="256K"/>
+				</dir>
+				<dir name="annotation">
+					<bdf name="regular" path="12.bdf" scale="2" highlighted="no" interlaced="yes" cache="256K"/>
+				</dir>
+				<dir name="monospace">
+					<bdf name="regular" path="12.bdf" scale="2" highlighted="no" interlaced="yes" cache="256K"/>
+				</dir>
+			</dir>
+		</vfs>
+
+		<default-policy root="/fonts" />
+	</config>
+
+	<content>
+		<rom label="vfs"/>
+		<rom label="ld.lib.so"/>
+		<rom label="vfs_bdf.lib.so"/>
+		<rom label="12.bdf"/>
+		<rom label="12-bold.bdf"/>
+		<rom label="vfs.lib.so"/>
+	</content>
+
+</runtime>
