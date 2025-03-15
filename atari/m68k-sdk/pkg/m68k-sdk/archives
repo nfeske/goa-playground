@@ -1,4 +1,5 @@
 nfeske/pkg/unix
+nfeske/pkg/thinister_fonts_fs
 nfeske/src/binutils-m68k
 nfeske/src/gnumake
 nfeske/src/asm56000

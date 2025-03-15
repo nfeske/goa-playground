@@ -1,11 +1,11 @@
-<runtime ram="130M" caps="5000" binary="init" config="unix.config">
+<runtime ram="140M" caps="5000" binary="init" config="unix.config">
 
 	<requires>
 		<gui/>
 		<rtc/>
 		<timer/>
 		<rom label="vimrc"/>
-		<file_system label="home" writeable="yes"/>
+		<file_system label="rw" writeable="yes"/>
 	</requires>
 
 	<content>
