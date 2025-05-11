@@ -109,7 +109,7 @@ struct Vfs_bdf::Local_factory : File_system_factory, Watch_response_handler
 		_max_height_fs.value(_font->font.font().bounding_box().h);
 	}
 
-	Local_factory(Vfs::Env &env, Xml_node config)
+	Local_factory(Vfs::Env &env, Xml_node const &config)
 	:
 		_env(env),
 		_font_config(config),
@@ -119,7 +119,7 @@ struct Vfs_bdf::Local_factory : File_system_factory, Watch_response_handler
 		_update_attributes();
 	}
 
-	Vfs::File_system *create(Vfs::Env&, Xml_node node) override
+	Vfs::File_system *create(Vfs::Env&, Xml_node const &node) override
 	{
 		if (node.has_type(Glyphs_file_system::type_name()))
 			return &_glyphs_fs;
@@ -157,7 +157,7 @@ class Vfs_bdf::File_system : private Local_factory,
 	private:
 
 		typedef String<200> Config;
-		static Config _config(Xml_node node)
+		static Config _config(Xml_node const &node)
 		{
 			char buf[Config::capacity()] { };
 
@@ -175,7 +175,7 @@ class Vfs_bdf::File_system : private Local_factory,
 
 	public:
 
-		File_system(Vfs::Env &vfs_env, Genode::Xml_node node)
+		File_system(Vfs::Env &vfs_env, Genode::Xml_node const &node)
 		:
 			Local_factory(vfs_env, node),
 			Vfs::Dir_file_system(vfs_env,
@@ -201,7 +201,7 @@ extern "C" Vfs::File_system_factory *vfs_file_system_factory(void)
 	struct Factory : Vfs::File_system_factory
 	{
 		Vfs::File_system *create(Vfs::Env &vfs_env,
-		                         Genode::Xml_node node) override
+		                         Genode::Xml_node const &node) override
 		{
 			try { return new (vfs_env.alloc())
 				Vfs_bdf::File_system(vfs_env, node); }

@@ -9,7 +9,7 @@
 		<libc stdout="/dev/log" stderr="/dev/log" rtc="/dev/rtc"/>
 		<vfs>
 			<dir name="dev"> <log/> <inline name="rtc">2000-01-01 00:00</inline> </dir>
-			<fs label="src"/>
+			<fs label="src -> /"/>
 			<import overwrite="no">
 				<tar name="examples.tar"/>
 				<rom name="wave.lua" binary="no"/>

@@ -73,3 +73,10 @@
  #endif
  };
 +#undef _WIN32 /* __GENODE__ */
++++ src/mk/top.mk	2025-05-11 22:22:36.448904003 +0200
+@@ -8,4 +8,4 @@
+ include mk/pkgs.mk
+ include mk/deps.mk
+ include mk/objs.mk
+-include mk/install.mk
++#include mk/install.mk

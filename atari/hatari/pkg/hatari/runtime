@@ -16,7 +16,7 @@
 			<dir name="share"> <dir name="hatari">
 				<rom name="tos.img" label="etos512us.img"/> </dir> </dir>
 			<dir name="c">
-				<fs label="drive_c"/>
+				<fs label="drive_c -> /"/>
 			</dir>
 		</vfs>
 		<libc stdout="/dev/log" stderr="/dev/log" rtc="/dev/rtc"/>

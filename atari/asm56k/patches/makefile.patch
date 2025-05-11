@@ -22,3 +22,12 @@ Use LDLIBS
  
  
  
+@@ -114,7 +114,7 @@
+ 	exit $$res
+ 
+ install:: $(TARGETNAME)
+-	cp $(TARGETNAME) $(DESTDIR)$(bindir)
++#	cp $(TARGETNAME) $(DESTDIR)$(bindir)
+ 
+ 
+ clean::

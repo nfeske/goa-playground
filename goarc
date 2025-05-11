@@ -1,4 +1,4 @@
-set version(nfeske/src/hatari)        2024-11-25
+set version(nfeske/src/hatari)        2025-05-11
 set version(nfeske/src/asm56k)        2024-10-08
 set version(nfeske/src/asm56000)      2025-03-15
 set version(nfeske/src/binutils-m68k) 2024-10-08
@@ -10,35 +10,39 @@ set version(nfeske/raw/m68k-sdk)      2025-03-15
 set version(nfeske/raw/unix)          2024-10-08
 set version(nfeske/raw/load81)        2024-10-08
 set version(nfeske/raw/hatari)        2024-10-08
-set version(nfeske/pkg/hatari)        2024-11-25
-set version(nfeske/pkg/hatari-tt)     2024-11-25
-set version(nfeske/pkg/hatari-st)     2024-11-25
-set version(nfeske/pkg/m68k-sdk)      2025-03-15
-set version(nfeske/pkg/unix)          2024-10-08
-set version(nfeske/pkg/numptyphysics) 2024-10-08
-set version(nfeske/pkg/atari800)      2024-11-25
-set version(nfeske/pkg/load81)        2024-10-08
+set version(nfeske/pkg/hatari)        2025-05-11
+set version(nfeske/pkg/hatari-tt)     2025-05-11
+set version(nfeske/pkg/hatari-st)     2025-05-11
+set version(nfeske/pkg/m68k-sdk)      2025-05-11
+set version(nfeske/pkg/unix)          2025-05-11
+set version(nfeske/pkg/numptyphysics) 2025-05-11
+set version(nfeske/pkg/atari800)      2025-05-11
+set version(nfeske/pkg/load81)        2025-05-11
 
-set version(nfeske/src/bubble_universe) 2024-11-05
-set version(nfeske/pkg/bubble_universe) 2024-11-05
+set version(nfeske/src/bubble_universe) 2025-05-11
+set version(nfeske/pkg/bubble_universe) 2025-05-11
 
-set version(nfeske/src/vfs_bdf)            2025-03-15
+set version(nfeske/api/dialog)             2025-04-09
+set version(nfeske/src/dialog)             2025-04-28
+set version(nfeske/pkg/dialog)             2025-04-28
+set version(nfeske/src/vfs_bdf)            2025-05-11
 set version(nfeske/raw/thinister)          2025-03-15
-set version(nfeske/pkg/thinister_fonts_fs) 2025-03-15
+set version(nfeske/pkg/thinister_fonts_fs) 2025-05-11
 
 set version(nfeske/api/sdl2)    2024-04-11
-set version(nfeske/src/sdl2)    2024-11-19
+set version(nfeske/src/sdl2)    2025-04-09
 set version(nfeske/src/gnumake) 2024-04-26
 
-set version(nfeske/pkg/unix_1st) 2024-10-08
-set version(nfeske/pkg/unix_2nd) 2024-10-08
-set version(nfeske/raw/unix_2nd) 2024-10-08
-set version(nfeske/pkg/unix_3rd) 2024-10-08
-set version(nfeske/raw/unix_3rd) 2024-10-08
+set version(nfeske/pkg/unix)     2025-04-28
+set version(nfeske/pkg/unix_1st) 2025-04-28
+set version(nfeske/pkg/unix_2nd) 2025-04-28
+set version(nfeske/raw/unix_2nd) 2025-04-28
+set version(nfeske/pkg/unix_3rd) 2025-04-28
+set version(nfeske/raw/unix_3rd) 2025-04-28
 
 set version(nfeske/api/libc)       2024-10-07
 set version(nfeske/api/sdl)        2024-11-25
-set version(nfeske/src/sdl)        2024-11-25
+set version(nfeske/src/sdl)        2025-04-09
 set version(nfeske/api/sdl_image)  2023-11-29
 set version(nfeske/src/sdl_image)  2024-04-26
 set version(nfeske/api/sdl_ttf)    2023-11-29
@@ -53,7 +57,10 @@ set version(nfeske/src/sed)        2024-04-26
 set version(nfeske/src/expat)      2024-04-11
 set version(nfeske/src/libiconv)   2024-04-11
 
-set version(genodelabs/src/jpeg)       2024-04-11
-set version(genodelabs/src/libpng)     2024-04-11
-set version(genodelabs/src/freetype)   2024-04-11
-set version(genodelabs/src/vfs_oss)    2024-11-19
+set version(genodelabs/src/jpeg)       2025-04-09
+set version(genodelabs/src/libpng)     2025-04-09
+set version(genodelabs/src/freetype)   2025-04-09
+set version(genodelabs/src/vfs_oss)    2025-04-09
+set version(genodelabs/src/vfs_import) 2025-04-09
+set version(genodelabs/src/menu_view)  2025-04-28
+set version(genodelabs/api/sandbox)    2025-01-29

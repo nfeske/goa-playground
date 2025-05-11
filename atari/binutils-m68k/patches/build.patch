@@ -1,4 +1,4 @@
-+++ src/Makefile.in	2023-06-18 04:24:39.641381777 +0200
++++ src/Makefile.in	2025-05-11 23:04:00.117260722 +0200
 @@ -407,6 +407,7 @@
  
  CFLAGS = @CFLAGS@
@@ -7,6 +7,15 @@
  LIBCFLAGS = $(CFLAGS)
  CXXFLAGS = @CXXFLAGS@
  LIBCXXFLAGS = $(CXXFLAGS) -fno-implicit-templates
+@@ -2448,7 +2449,7 @@
+ # Installation targets.
+ 
+ .PHONY: install uninstall
+-install:
++_install:
+ 	@: $(MAKE); $(unstage)
+ 	@r=`${PWD_COMMAND}`; export r; \
+ 	s=`cd $(srcdir); ${PWD_COMMAND}`; export s; \
 @@ -50293,4 +50294,8 @@
  .NOEXPORT:
  MAKEOVERRIDES=

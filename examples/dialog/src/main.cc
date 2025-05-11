@@ -5,10 +5,7 @@
  */
 
 /*
- * Copyright (C) 2023 Genode Labs GmbH
- *
- * This file is part of the Genode OS framework, which is distributed
- * under the terms of the GNU Affero General Public License version 3.
+ * MIT License
  */
 
 #include <base/component.h>
